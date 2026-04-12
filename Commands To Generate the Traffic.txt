@@ -1,0 +1,18 @@
+Commands To Generate the Traffic:
+
+
+Low Traffic:
+ping google.com -n 20
+nslookup google.com
+curl https://example.com
+
+Medium Traffic:
+ping -4 google.com -n 200 -l 1000
+nslookup youtube.com
+curl https://google.com
+
+
+High Traffic:
+ping -4 8.8.8.8 -n 500 -l 2000
+for /l %i in (1,1,50) do nslookup google.com
+curl https://youtube.com
